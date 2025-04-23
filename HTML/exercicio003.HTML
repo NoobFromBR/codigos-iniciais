@@ -67,7 +67,12 @@
     function go()
     {
         var valueInput = document.getElementById("num").value;
-        alert(valueInput)
+        if (valueInput.trim() === ""){
+            alert("por favor digite algo, antes de enviar")
+        } else{
+            alert("voce digitou" + valueInput)
+        }
+         
     }
 </script>
 </html>
