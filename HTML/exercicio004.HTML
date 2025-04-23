@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GM|03</title>
+    <title>GM|04</title>
     <style>
         body{
             background-color: cornflowerblue;
@@ -51,28 +51,31 @@
 </head>
 <body>
     <div class="box-nav">
-    <h1>Exercicio 003</h1>
-    <h2> LER O VALOR DE UM INPUT E MOSTRAR EM UM ALERT</h2>
+    <h1>Exercicio 004</h1>
+    <h2> Leia valores A e B. Trocar os valores entre as duas variáveis, a variável A passa a possuir o valor da variável B e a variável B passa a possuir o valor da variável A.</h2>
     </div>
     
     <div class="box"> 
         <p>LEITOR DE VALOR</p>
-        <input type="text" id="num" placeholder="digite algo">
-        <br>
-        <br>
+        <input type="text" id="num-a" placeholder="digite o primeiro valor">
+        <br><br>
+        <input type="text" id="num-b" placeholder="digite o segundo valor">
+        <br><br>
         <button onclick="go()">enviar</button>
     </div>
 </body>
 <script>
     function go()
     {
-        var valueInput = document.getElementById("num").value;
-        if (valueInput.trim() === ""){
-            alert("por favor digite algo, antes de enviar")
-        } else{
-            alert("voce digitou" + valueInput)
-        }
-         
+        var a = valueInput = document.getElementById('num-a').value;
+        var b = valueInput = document.getElementById('num-b').value;
+        console.log('variavel a: '  + a);
+        console.log('variavel b: '  + b);
+        var c = b;
+        var b = a;
+        var a = c;
+        console.log('variavel a: '  + a);
+        console.log('variavel b: '  + b);
     }
 </script>
 </html>
