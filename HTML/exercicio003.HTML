@@ -31,7 +31,8 @@
             outline: none;
             border-radius: 20px;
             font-size: 15px;
-            width: 50%;
+            width: 90%;
+            text-align: center;
         }
         button{
             background-color: rgb(93, 153, 206);
@@ -51,15 +52,22 @@
 <body>
     <div class="box-nav">
     <h1>Exercicio 003</h1>
-    <h2> CONFEÇÃO DE LAYOUT DE SITE</h2>
+    <h2> LER O VALOR DE UM INPUT E MOSTRAR EM UM ALERT</h2>
     </div>
     
     <div class="box"> 
-        <p>Questão</p>
-        <input type="text" placeholder="digite algo">
+        <p>LEITOR DE VALOR</p>
+        <input type="text" id="num" placeholder="digite algo">
         <br>
         <br>
-        <button>enviar</button>
-      
+        <button onclick="go()">enviar</button>
+    </div>
 </body>
+<script>
+    function go()
+    {
+        var valueInput = document.getElementById("num").value;
+        alert(valueInput)
+    }
+</script>
 </html>
